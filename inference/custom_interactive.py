@@ -118,7 +118,7 @@ class Translator:
 
         # we have custom architechtures in this folder and we will let fairseq
         # import this
-        args.user_dir = "model_configs"
+        args.user_dir = "indicTrans/model_configs"
         self.cfg = convert_namespace_to_omegaconf(args)
 
         utils.import_user_module(self.cfg.common)
